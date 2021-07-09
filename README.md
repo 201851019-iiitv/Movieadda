@@ -1,5 +1,5 @@
 # Moviespedia
-<img src= "https://visitor-badge.laobi.icu/badge?page_id=201851019-iiitv/simple-project " alt="visitor badge"/> |  ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/201851019-iiitv/simple-project/master)
+<img src= "https://visitor-badge.laobi.icu/badge?page_id=201851019-iiitv/Movieadda " alt="visitor badge"/> |  ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/201851019-iiitv/Movieadda/main)
 
 ## About 
 
