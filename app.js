@@ -4,7 +4,9 @@ const app=express()
 const dotenv=require('dotenv')
 
 dotenv.config()
+const port=process.env.PORT ||3000
 app.set("view engine","ejs")
+
 app.get('/',(req,res)=>{
     
 //res.send('Hompage')
@@ -75,7 +77,7 @@ app.get('*' ,(req,res)=>{
 })
 
 
-app.listen('3000',()=>{
+app.listen(port,()=>{
 
     console.log('server has started')
 })
