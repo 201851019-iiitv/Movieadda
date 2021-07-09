@@ -1,0 +1,30 @@
+{
+  "name": "simple-project",
+  "version": "1.0.0",
+  "description": "simple project",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/201851019-iiitv/simple-project.git"
+  },
+  "author": "ambesh kumar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/201851019-iiitv/simple-project/issues"
+  },
+  "homepage": "https://github.com/201851019-iiitv/simple-project#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  },
+  "dependencies": {
+    "dotenv": "^9.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "request": "^2.88.2",
+    "requests": "^0.3.0"
+  }
+}

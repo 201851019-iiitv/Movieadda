@@ -1,0 +1,47 @@
+<%- include("./partials/header.ejs") %>
+<style>
+    body{
+      background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    }
+    .container{
+margin-top: 1%;
+margin-left: 17%;
+    }
+    .imgpost{
+       margin-top: 5%; 
+    }
+    #card{
+        background-color: rgba(124, 85, 11, 0.3);
+    }
+</style> 
+<body>
+    <div class="col d-flex justify-content-center">
+        <div class=container>
+    <div class="card mb-3" style="max-width:1000px;" id="card">
+        <div class="row g-0">
+          <div class="col-lg-auto col-md-auto col-sm-auto">
+            <img src="<%= details.Poster%> " alt="movies poster" class="imgpost" style="margin-left: 2.5%; margin-right:2%">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h3 class="card-title"><%= details.Title %></h3>
+              <p class="card-text"><b>Actor :</b><%= details.Actors %> </p>
+          <p class="card-text"><b>Released :</b><%= details.Released %> </p>
+          <p class="card-text"><b>Runtime :</b><%= details.Runtime %> </p>
+          <p class="card-text"><b>Genre :</b><%= details.Genre %> </p>
+          <p class="card-text"><b>Released :</b><%= details.Language %> </p>
+          <p class="card-text"><b>Country :</b><%= details.Country%> </p>
+          <p class="card-text"><b>Rated:</b><%= details.Rated%> </p>
+          <p class="card-text"><b>Director :</b><%= details.Director%> </p>
+          <p class="card-text"><b>Writer :</b><%= details.Writer%> </p>
+          <p class="card-text"><b>Award :</b><%= details.Award%> </p>
+          <p class="card-text"><b>Story:</b> <br><%= details.Plot %> </p>
+              <p class="card-text"><small class="text-muted">Last updated 5 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+</body>
+ <%- include("./partials/footer.ejs") %> 

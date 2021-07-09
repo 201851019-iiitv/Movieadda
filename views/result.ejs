@@ -1,0 +1,45 @@
+<%- include("./partials/header.ejs") %>
+
+<style>
+  body{
+      background-image: linear-gradient(to right top, #6b9fd1, #6e9cd9, #7699e0, #8295e4, #918fe7, #769bf3, #51a6fb, #00b1ff, #00caff, #00dfee, #00f0c1, #5ffb89);
+  }
+
+  .container{
+margin-left: 8%;
+margin-bottom: 2%;
+  }
+  .card{
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793);
+    margin-right: 2%;
+    margin-top: 2%;
+  }
+  .row{
+    margin :0;
+  }
+
+  </style>
+<body>
+
+  
+   <%if(moviesData.Response==='False'){%>
+  <h1>Movies not found !!</h1>
+  <% }else { %>
+    <div class="container">
+      <div class="row">
+<% moviesData['Search'].forEach(movie => { %>
+ 
+    <div class="card text-center text-white bg-dark mb-3" style="width: 18.1rem; margin-top: 2%;">
+        <img src="<%= movie.Poster %> " class="card-img-top" alt="movies poster" style="margin-top:2%">
+        <div class="card-body">
+          <h5 class="card-title"><%= movie.Title %> </h5>
+          <p class="card-text" style="margin:5%"><b>Year :</b><%= movie.Year  %> </p>
+          <a href="/movies/<%= movie.imdbID %> " class="btn btn-dark">Know more</a>
+        </div>
+        </div>
+  <%  }); %> 
+</div>
+ <% } %> 
+
+    </div>
+ <%- include("./partials/footer.ejs") %> 
