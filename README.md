@@ -14,9 +14,8 @@ If used windows then install  `Putty and Puttygen` .
 
 
 ## Demo
-![moviespedia](https://user-images.githubusercontent.com/48892208/120060763-381d0800-c077-11eb-887a-a190e5594624.gif)
-[Moviespedia Server 1]( http://moviespedia.cf/)    <br>
-[Moviespedia Server2]( http://www.moviespedia.tk/)
+![moviesadda](https://user-images.githubusercontent.com/48892208/120060763-381d0800-c077-11eb-887a-a190e5594624.gif)
+[Moviesadda Server 1]( https://moviesadda.herokuapp.com/)   
 
 ## Technologies Used
 * AWS EC2 Instances
