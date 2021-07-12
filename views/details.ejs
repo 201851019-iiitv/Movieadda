@@ -11,13 +11,18 @@
   border:1px solid black;
   display:flex;
   flex-direction:row;
-  justify-content:center;
-  align-items:center;
   background-image: linear-gradient(to right top, #051937, #004d7a, #008793);
     }
 
-    imgpost{
-      margin-top: 8px;
+    img#imgpost{
+      margin:8px;
+      flex-basis: 30%;
+      -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+   background-position: fixed;
+   background-repeat: no-repeat;
     }
 
     .details{
@@ -25,8 +30,8 @@
   flex-direction:column;
   /* justify-content:center;
   align-items:center; */
-  margin-left: 16px;
-  margin-top: 8px;
+  margin: 8px;
+  flex-basis: 60%;
     }
   
 </style> 
@@ -34,7 +39,7 @@
     
         <div class=container >
         <div class=poster-img>
-          <img src="<%= details.Poster%> " alt="movies poster" class="imgpost">
+          <img src="<%= details.Poster%> " alt="movies poster" id="imgpost">
         </div>
       <div class="details">
           <div class="titlev"><h3 class="card-title"><%= details.Title %></h3></div>
