@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
         <div class="container-fluid">
             <a class="navbar-brand" href="/">Movie Adda</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -43,7 +43,10 @@
 
 <style>
     body{
-        background-image: linear-gradient(to right top, #6b9fd1, #6e9cd9, #7699e0, #8295e4, #918fe7, #769bf3, #51a6fb, #00b1ff, #00caff, #00dfee, #00f0c1, #5ffb89);
+        background-color:rgb(32, 31, 31);
+      color: white;  /* fallback for old browsers */
+
+
     }
     .d-flex1{
        width:30%;
@@ -51,19 +54,17 @@
        margin-left: 32%;
 
     }
-    #navBarSearchForm input[type=text]{
-    width:430px !important;
-    }
 </style>
 
 <h1 style="text-align: center;"><b><u>Movie Adda</u> </b></h1>
 
-    <p style="text-align: center;"> You can find any movies as per your interest .You collect all information of the movies </p>
+    <p style="text-align: center;"><b> <i>Search Movies whatever you want </i></b>  </p>
+
     <form class="d-flex1" action ='/movies' method="GET">
-        <input class="form-control me-2" type="text"  id="navBarSearchForm" placeholder="Movie name" aria-label="Search"  name="MovieName" >
-        <button class="btn btn-info" style="margin-left: 30%; margin-top: 2%; margin-bottom:30%; width:25%" type="submit">Search</button>
-        
-     <!-- <p style="margin-top: 10%; margin-left: 1%;"><small> **data taken from <b>OMDB</b></small> </p>
-     -->
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Movie Name" aria-label="Search" aria-describedby="basic-addon2" name="MovieName">
+            <div class="input-group-append">
+              <button class="btn btn-success my-2 my-sm-0" type="submit">Search</button>
+            </div>
     </form>
 <%- include("./partials/footer.ejs") %> 

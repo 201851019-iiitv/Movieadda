@@ -1,47 +1,58 @@
 <%- include("./partials/header.ejs") %>
 <style>
     body{
-      background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+      background-color:rgb(32, 31, 31);
+      color: white;
     }
     .container{
-margin-top: 1%;
-margin-left: 17%;
+      margin-top:24px;
+      margin-bottom:24px;
+  width: 75%;
+  border:1px solid black;
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  align-items:center;
+  background-image: linear-gradient(to right top, #051937, #004d7a, #008793);
     }
-    .imgpost{
-       margin-top: 5%; 
+
+    imgpost{
+      margin-top: 8px;
     }
-    #card{
-        background-color: rgba(124, 85, 11, 0.3);
+
+    .details{
+  display:flex;
+  flex-direction:column;
+  /* justify-content:center;
+  align-items:center; */
+  margin-left: 16px;
+  margin-top: 8px;
     }
+  
 </style> 
 <body>
-    <div class="col d-flex justify-content-center">
-        <div class=container>
-    <div class="card mb-3" style="max-width:1000px;" id="card">
-        <div class="row g-0">
-          <div class="col-lg-auto col-md-auto col-sm-auto">
-            <img src="<%= details.Poster%> " alt="movies poster" class="imgpost" style="margin-left: 2.5%; margin-right:2%">
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h3 class="card-title"><%= details.Title %></h3>
-              <p class="card-text"><b>Actor :</b><%= details.Actors %> </p>
-          <p class="card-text"><b>Released :</b><%= details.Released %> </p>
-          <p class="card-text"><b>Runtime :</b><%= details.Runtime %> </p>
-          <p class="card-text"><b>Genre :</b><%= details.Genre %> </p>
-          <p class="card-text"><b>Released :</b><%= details.Language %> </p>
-          <p class="card-text"><b>Country :</b><%= details.Country%> </p>
-          <p class="card-text"><b>Rated:</b><%= details.Rated%> </p>
-          <p class="card-text"><b>Director :</b><%= details.Director%> </p>
-          <p class="card-text"><b>Writer :</b><%= details.Writer%> </p>
-          <p class="card-text"><b>Award :</b><%= details.Award%> </p>
-          <p class="card-text"><b>Story:</b> <br><%= details.Plot %> </p>
-              <p class="card-text"><small class="text-muted">Last updated 5 mins ago</small></p>
+    
+        <div class=container >
+        <div class=poster-img>
+          <img src="<%= details.Poster%> " alt="movies poster" class="imgpost">
+        </div>
+      <div class="details">
+          <div class="titlev"><h3 class="card-title"><%= details.Title %></h3></div>
+          <div class="details1"> <p class="card-text"><b>Actor :</b><%= details.Actors %> </p></div>
+          <div class="details1">  <p class="card-text"><b>Released :</b><%= details.Released %> </p></div>
+          <div class="details1">  <p class="card-text"><b>Runtime :</b><%= details.Runtime %> </p></div>
+          <div class="details1"> <p class="card-text"><b>Genre :</b><%= details.Genre %> </p></div>
+          <div class="details1">  <p class="card-text"><b>Released :</b><%= details.Language %> </p></p></div>
+          <div class="details1">  <p class="card-text"><b>Country :</b><%= details.Country%> </p> </p></div>
+          <div class="details1">   <p class="card-text"><b>Rated:</b><%= details.Rated%> </p></p></div>
+          <div class="details1">  <p class="card-text"><b>Director :</b><%= details.Director%> </p> </p></div>
+          <div class="details1"> <p class="card-text"><b>Award :</b><%= details.Award%> </p> </p></div>
+          <div class="details1">  <p class="card-text"><b>Story:</b> <br><%= details.Plot %> </p> </p></div>
+              <p class="card-text"><small class="text-muted">Last Fetched 5 mins ago</small></p>
             </div>
           </div>
         </div>
       </div>
       </div>
-    </div>
 </body>
  <%- include("./partials/footer.ejs") %> 

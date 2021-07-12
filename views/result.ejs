@@ -2,7 +2,8 @@
 
 <style>
   body{
-      background-image: linear-gradient(to right top, #6b9fd1, #6e9cd9, #7699e0, #8295e4, #918fe7, #769bf3, #51a6fb, #00b1ff, #00caff, #00dfee, #00f0c1, #5ffb89);
+    background-color:rgb(32, 31, 31);
+      color: white;
   }
 
   .container{
@@ -23,7 +24,7 @@ margin-bottom: 2%;
 
   
    <%if(moviesData.Response==='False'){%>
-  <h1>Movies not found !!</h1>
+  <h1 style="text-align: center; color:#00b1ff"><b>Movies not Found ,Please Find correct name</b></h1>
   <% }else { %>
     <div class="container">
       <div class="row">
