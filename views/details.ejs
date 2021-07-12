@@ -8,7 +8,11 @@
    display: flex;
    justify-content: center;
   }
-  .imgpost {
+.img-poster1{
+ display: flex;
+ justify-content: center;
+}
+  img#imgpost {
     margin-top: 5%;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -27,12 +31,14 @@
       <div class="card mb-3" style="max-width: 1000px" id="card">
         <div class="row g-0">
           <div class="col-lg-auto col-md-auto col-sm-auto">
+            <div class="img-poster1">
             <img
               src="<%= details.Poster%> "
               alt="movies poster"
-              class="imgpost"
+              id="imgpost"
               style="margin-left: 2.5%; margin-right: 2%"
             />
+          </div>
           </div>
           <div class="col-md-8">
             <div class="card-body">
